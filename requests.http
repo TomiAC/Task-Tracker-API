@@ -1,0 +1,28 @@
+GET http://127.0.0.1:5000/tasks
+
+###
+GET http://127.0.0.1:5000/tasks
+Content-Type: application/json
+
+{
+    "status": "Done"
+}
+
+###
+POST http://127.0.0.1:5000/task
+Content-Type: application/json
+
+{
+    "description": "Ir a la verduleria"
+}
+
+###
+PUT http://127.0.0.1:5000/task/1
+Content-Type: application/json
+
+{
+    "status": "Done"
+}
+
+###
+DELETE http://127.0.0.1:5000/task/2
